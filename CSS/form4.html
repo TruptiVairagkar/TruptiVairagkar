@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC
+ "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <title>Evaluating Checkboxes</title>
+ <script language="Javascript" type="text/javascript">
+ <!--
+ function Education()
+ {
+ var selection = "You selected: "
+ with (document.forms.Contact)
+ {
+ if (HS.checked == true)
+ {
+ selection += "high school"
+ }
+ if (AD.checked == true)
+ {
+ selection += ", associate degree"
+ }
+ if (BD.checked == true)
+ {
+ selection += ", bachelor degree"
+ }
+ if (MD.checked == true)
+ {
+ selection += ", masters degree"
+ }
+ if (DD.checked == true)
+ {
+ selection += ", doctorate degree "
+ }
+ }
+ alert(selection)
+ }
+ -->
+ </script>
+</head>
+ <body>
+ <FORM name="Contact"
+ action="http://www.jimkeogh.com" method="post">
+ <P>
+ <INPUT TYPE="checkbox"
+ name="HS" value="HS">High School
+ <BR>
+ <INPUT TYPE="checkbox"
+ name="AD" value="AD">Associate Degree
+ <BR>
+ <INPUT TYPE="checkbox"
+ name="BD" value="BD">Bachelor degree
+ <BR>
+ <INPUT TYPE="checkbox"
+ name="MD" value="MD">Masters Degree
+ <BR>
+ <INPUT TYPE="checkbox"
+ name="DD" value="DD">Doctorate Degree
+ <BR>
+ <INPUT name="Process" value="Process"
+ type=reset onclick ="Education()" >
+ </P>
+ </FORM>
+ </body>
+</html>

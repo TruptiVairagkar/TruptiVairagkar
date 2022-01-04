@@ -1,0 +1,29 @@
+<html>
+<head>
+</head>
+<body>
+    <form>
+Enter name:
+<input type:"text" id="txt1">
+Enter password:
+<input type:"Password" id="txt2">
+<button name="btn1" onClick=validation()>Click</button>
+        </form>
+<script>
+function validation()
+{
+var myInput = document.getElementById("txt1").value;
+var my = document.getElementById("txt2").value;
+    if(myInput=="AVC" && my=="123")
+        {
+            alert("Login success")
+        }
+    else{
+        
+        alert("UNsucess")
+    }
+}
+    </script>
+
+</body>
+</html>

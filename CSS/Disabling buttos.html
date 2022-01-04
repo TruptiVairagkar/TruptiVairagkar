@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		How to disable button element
+		dynamically using JavaScript?
+	</title>
+</head>
+
+<body style="text-align:center">
+
+	<h1 style="color: green;">
+		Disabling Button
+	</h1>
+
+	<h2>
+		How to disable button element<br>
+		dynamically using JavaScript?
+	</h2>
+
+	<!-- Assigning id to Button. -->
+	<button id="GFG" onclick="exam()">
+		Submit
+	</button>
+
+	<br><br>
+
+	<p id="sudo"></p>
+
+	<script>
+		function exam() {
+
+			document.getElementById("GFG")
+				.disabled = "true";
+
+			document.getElementById("sudo")
+				.innerHTML = "Button is Disabled";
+		}
+	</script>
+</body>
+
+</html>
