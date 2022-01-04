@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  width: 5000px;
+}
+</style>
+</head>
+<body>
+
+<p>Click the button to scroll the document window to 500 pixels horizontally.</p>
+    <p>click the button to scroll window at top</p>
+<p>    
+    The Window scrollTo() method is used to <br>
+    scroll to a particular set of coordinates in the document.<br>
+
+Syntax:
+
+window.scrollTo(x-coord, y-coord)<br>
+Parameters: The scrollTo() method accepts two parameters
+    as described below:<br>
+
+x-coord: It is the pixel along the horizontal<br>
+    axis of the document that is displayed in<br> 
+    the upper left. It is the required field.<br>
+    y-coord: It is the pixel along the vertical axis <br>
+    
+    of the document that is displayed in the upper <br>
+
+    left. It is the required field.
+    </p>
+<button onclick="scrollWin()">Click me to scroll horizontally!</button><br><br>
+<button onclick="scrollW()">Click me to scroll!</button><br>
+<script>
+function scrollWin() {
+  window.scrollTo(500,0);
+}
+ function scrollW() {
+  window.scrollTo(0,0);
+}   
+</script>
+
+</body>
+</html>

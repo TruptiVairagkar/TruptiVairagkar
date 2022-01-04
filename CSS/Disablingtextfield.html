@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		HTML DOM Input Text disabled Property
+	</title>
+</head>
+
+<body style="text-align:center;">
+
+	<h1>Disabling texfield</h1>
+
+	<h2>Input Text disabled Property</h2>
+			<form id="myGeeks">
+	<input type="text" id="text_id" name="geeks" disabled="false">
+				</form>
+				<br>
+	<button onclick="myGeeks()">Click Here!</button>
+	
+	<p id="GFG" style="font-size:20px;"></p>
+
+	
+	<!-- script to return the disabled Property-->
+	<script>
+		function myGeeks() {
+			 document.getElementById("text_id").disabled=true;
+			//document.getElementById("GFG").innerHTML = txt;
+		}
+	</script>
+</body>
+
+</html>					

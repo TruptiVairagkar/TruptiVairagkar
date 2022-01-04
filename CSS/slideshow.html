@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Image SlideShow</title>
+    <script>
+    var images = ["1.jpeg", "2.png", "flowchart.png", "1.jpeg", "2.png"];
+    var count = 0;
+    function previousImage() 
+    {
+        if(count!=0)
+            count--;
+        var id = document.getElementById("imageId");
+        id.src =images[count];
+    }
+    function nextImage() {
+        if(count!=4)
+            count++;
+        var id = document.getElementById("imageId");
+        id.src =images[count];
+    }
+</script>
+</head>
+<body>
+<center>
+    <img id="imageId" src="1.jpeg" width="300" height="200"/>  
+    <br/>
+    <hr>
+    <input type="button" value="< Prev Image" 
+                                      onclick="previousImage()"/>
+    <input type="button" value="Next Image >" 
+                                      onclick="nextImage()"/>
+</center>
+</body>
+</html>

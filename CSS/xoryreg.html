@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Regular Expressions</h2>
+
+<p>Do a global search for any of the specified alternatives (red|green):</p>
+
+<p id="demo"></p>
+
+<script>
+text = "re, green, red, green, gren, gr, blue, yellow";
+    result = text.match(/(red|green)/g);
+//document.getElementById("demo").innerHTML = result;
+    document.write(result);
+    </script>
+
+</body>
+</html>
